@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+
+{% block title %} Gestion de Mis perris {% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h2>Edicion Mis perris</h2>
+        <div class="card">
+            <div class="card-body">
+                <form action="/editarMisperris/" method="POST">{% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" id="txtNombre" name="txtNombre" value="{{misperris.nombre}}" class="form-control" placeholder="Nombre" 
+                        maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtRaza Predominante" name="txtRaza Predominante" value="{{misperris.razapredominante}}" class="form-control" placeholder="Raza Predominante" 
+                        maxlength="60" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtDescripción" name="txtNDescripción" value="{{misperris.descripción}}" class="form-control" placeholder="Descripción" 
+                        maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="txtEstado" name="txtEstado" value="{{misperris.estado}}" class="form-control" placeholder="Estado" 
+                        maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Guardar</button>
+
+                    </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,232 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-UA-Compatible" content="ie=edge" />
+    <title>Fundación Mis Perris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@500&family=Mulish:ital,wght@1,200;1,500&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static '/normalize.css' %}">
+    <link rel="stylesheet" href="{% static '/estilos.css' %}" >
+  </head>
+  <body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h1>Fundación Mis Perris</h1>
+                </div>
+                    <nav class="navegacion ocultar">
+                        <a href="#">Nuestra Fundación</a>
+                        <a href="#">Testimonios</a> 
+                        <a href="#">Mesa de Ayuda</a> 
+                        <a href="#">Sede principal</a> 
+                        <a href="#">Regístrate</a> 
+                     </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>¡Ayudanos a Ayudar!</h2>
+                    <a href="#" class="btn bordes">Inscribete</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="imagenes mis peris/baby_dog15.mp4">
+                </video>
+            
+            </div>
+        </div>
+    </header>
+
+<div class="contenedor-nosotros contenedor">
+    <div class="texto-nosotros">
+        <p class="bienvenida">¡Te damos la bienvenida!</p>
+        <h1>Fundación Mis Perris</h1>
+        <p>Somos una organización sin fines de lucro, destinada a ayudar y a prestar atención a perritos en situación de 
+            calle, abandono, maltrato o cualquier tipo de abuso.
+            Nuestro compromiso és con los animales por sobre todas las cosas, contamos con muchos voluntarios
+            de buen corazón que estan dispuestos a yudarnos para seguir con nuestra labor.
+            ¡Ellos no pueden defenderse, y necesitan de tu ayuda!
+            Se parte de nuestra gran comunidad. Puedes ayudarnos con aportes en nuestra cuenta o prestando voluntariado.
+            Toda ayuda se agradece.</p>
+            <a href="#" class="btn btn-rojo">Contáctanos</a>
+    </div>
+    <div class="imagenes-nosotros">
+        <div class="imagen1">
+            <img src="{%static 'imagenesmisperis/adoptados/Apolo.jpg' %}" alt="perrito1">
+          </div>
+          <div class="imagenes2">
+            <img src="{%static 'imagenesmisperis/adoptados/Duque.jpg' %}" alt="perrito2">
+            <img src="{%static '/imagenesmisperis/adoptados/Tom.jpg' %}" alt="perrito3">
+          </div>
+    </div>
+</div>
+<section class="testimonios contenedor">
+    <h2 class="texto-testimonios">Testimonios</h2>
+    <div class="botones-testimonios">
+        <!--<button class="bigotes btn btn-verde">Bigotes</button>
+        <button class="chocolate btn btn-verde">Chocolate</button>
+        <button class="luna btn btn-verde">Luna</button>//-->
+    </div>
+    <div class="testimonios">
+        <div class="testimonio" data-testimonio="Bigotes">
+            <img src="{%static '/imagenesmisperis/rescatados/Bigotes_tn.jpg' %}" alt="Bigotes">
+            <h2>Bigotes</h2>
+            <p>Bigotes era un perrito de la calle que fué atropellado por un auto.
+                El llegó a nuestro centro por una persona anónima que lo rescató.  
+                Fué rehabilitado y ahora es feliz, ya que fue adoptado por una familia
+                que hizo para el un hermoso hogar.
+            </p>
+        </div>
+    </div>
+    <div class="testimonio" data-testimonio="Chocolate">
+        <img src="{%static '/imagenesmisperis/rescatados/Chocolate_tn.jpg' %}" alt="Chocolate">
+        <h2>Chocolate</h2>
+        <p>Chocolate sufría maltrato, el fué rescatado de una casa donde era golpeado,
+            mal alimentado y sufría abandono. Hoy es feliz y vive con una hermosa familia que le adoptó.
+        </p>
+    </div>
+    <div class="testimonio" data-testimonio="Luna">
+        <img src="{%static '/imagenesmisperis/rescatados/Luna.jpg'%}" alt="Luna">
+        <h2>Luna</h2>
+        <p>Luna es una perrita que fue abandonada desde cachorra en la calle,
+            una familia de escasos recursos la matubo un tiempo bajo su cuidado pero ya no 
+            pudieron tenerla. Fué adoptada por una familia sureña que viajó desde el sur por ella.
+        </p>
+    </div>
+</section>
+<div class="formulario-contacto contenedor">
+
+    <div class="informacion-contacto">
+        <h3>Contáctanos</h3>
+        <p>Calle Lira 1278, Santiago Centro</p>
+        <h3>Correo</h3>
+        <p>fundacion@misperris.cl</p>
+        <h3>Whatsapp de contacto emergencias</h3>
+        <p>+56 934170587</p>
+        <h3>Otros centros de ayuda</h3>
+        <a href="https://www.chilemestizo.cl/">CHILE MESTIZO.CL</a>
+        <div>
+        </div>
+        <a href="https://www.buscadog.cl/">BUSCADOG.CL</a>
+        <div>
+        </div>
+        <a href="https://www.garrasypatas.cl/">GARRAS Y PATAS.CL</a>
+        <div>
+        </div>
+    
+    </div>
+    <form class="formulario">
+        <div class="input-formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="David" id="nombre">
+        </div>
+        <div class="input-formulario">
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Maldonado" id="apellido">
+        </div>
+        <div class="input-formulario">
+            <label for="edad">Edad</label>
+            <input type="number" placeholder="+ 18" id="edad">
+        </div>
+        <div class="input-formulario">
+            <label for="direccion">Dirección</label>
+            <input type="text" placeholder="Lira 1278" id="direccion">
+        </div>
+<!--         <div class="input-formulario">
+            <label for="comuna">Comuna</label>
+            <input type="text" placeholder="Santiago" id="comuna">
+        </div> -->
+        <div class="input-formulario">
+            <label for="comuna">Comuna</label>
+            <select aria-label="label for the select" class="input-formulario">
+                <option value="value1" style="font-weight: bold;" selected>Seleccione...</option>
+                <option value="value2" >Santiago</option>
+                <option value="value3">Independencia</option>
+                <option value="value3">Ñuñoa</option>
+                <option value="value3">Talagante</option>
+                <option value="value3">Quinta Normal</option>
+                <option value="value3">Renca</option>
+                <option value="value3">Cerro Navia</option>
+                <option value="value3">Lo Espejo</option>
+                <option value="value3">Puente Alto</option>
+                <option value="value3">Vitacura</option>
+                <option value="value3">La Pintana</option>
+                <option value="value3">San Ramon</option>
+                <option value="value3">Pudahuel</option>
+                <option value="value3">Cerrillos</option>
+                <option value="value3">Las Condes</option>
+                <option value="value3">La Granja</option>
+                <option value="value3">Huechuraba</option>
+                <option value="value3">Lo barnechea</option>
+                <option value="value3">Maipu</option>
+                <option value="value3">San Bernardo</option>
+                <option value="value3">San Joaquin</option>
+                <option value="value3">Estacion Central</option>
+                <option value="value3">Conchali</option>
+                <option value="value3">Lo Prado</option>
+                <option value="value3">Macul</option>
+                <option value="value3">Nuñoa</option>
+                <option value="value3">Peñalolen</option>
+                <option value="value3">El Bosque</option>
+                <option value="value3">Providencia</option>
+                <option value="value3">La Dehesa</option>
+                <option value="value3">Colina</option>
+                <option value="value3">Recoleta</option>
+                <option value="value3">La Reina</option>
+                <option value="value3">La Florida</option>
+                <option value="value3">La Cisterna</option>
+                <option value="value3">Pedro Aguirre Cerda</option>
+                <option value="value3">Lo Prado</option>
+
+            </select>
+        </div>
+        <div class="input-formulario">
+            <label for="teléfono o whatsapp">Teléfono o Whatsapp</label>
+            <input type="tel" placeholder="+56 12345678" id="telefono">
+        </div>
+        <div class="input-formulario">
+            <label for="correo">Correo</label>
+            <input type="email" placeholder="correo@ejemplo.cl" id="correo">
+        </div>
+        <div class="input-formulario">
+            <label for="mensaje">Cuentanos de ti</label>
+            <textarea></textarea>
+        </div>
+        <div class="input-formulario">
+           <input type="submit" class="btn btn-verde" value="Enviar">
+        </div>
+    </form>
+</div>
+       <div class="pie-pagina">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Lira 1278, Santiago Centro</p>
+            </div>
+            <div class="info">
+                <h3>Whatsapp</h3>
+                <p>+56 934170587</p>
+            </div>
+            <div class="info">
+                <h3>Fundación Mis Perris</h3>
+                <p>Amamos por sobre todas las cosas a los animalitos</p>
+            </div>
+        </div>
+       </div>
+       <footer class="footer">
+        <p>Todos los derechos reservados Fundación Mis Perris</p>
+       </footer>
+    <script src="js/app.js"></script>
+   
+  </body>
+</html>
